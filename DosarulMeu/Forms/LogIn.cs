@@ -22,7 +22,8 @@ namespace DosarulMeu
 
         private void createBtn_Click(object sender, EventArgs e)
         {
-
+            CreateAccount createAccount = new CreateAccount();
+            
         }
 
         private void forgotpassLbl_Click(object sender, EventArgs e)
