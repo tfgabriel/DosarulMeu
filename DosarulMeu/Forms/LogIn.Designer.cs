@@ -79,21 +79,23 @@
             this.forgotpassLbl.Size = new System.Drawing.Size(116, 20);
             this.forgotpassLbl.TabIndex = 4;
             this.forgotpassLbl.Text = "Am uitat parola";
+            this.forgotpassLbl.Click += new System.EventHandler(this.forgotpassLbl_Click);
             // 
             // loginBtn
             // 
-            this.loginBtn.Location = new System.Drawing.Point(309, 263);
+            this.loginBtn.Location = new System.Drawing.Point(252, 263);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(75, 23);
+            this.loginBtn.Size = new System.Drawing.Size(132, 35);
             this.loginBtn.TabIndex = 5;
             this.loginBtn.Text = "Log In";
             this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // createBtn
             // 
             this.createBtn.Location = new System.Drawing.Point(421, 263);
             this.createBtn.Name = "createBtn";
-            this.createBtn.Size = new System.Drawing.Size(75, 23);
+            this.createBtn.Size = new System.Drawing.Size(139, 35);
             this.createBtn.TabIndex = 6;
             this.createBtn.Text = "Creează Cont";
             this.createBtn.UseVisualStyleBackColor = true;
