@@ -52,6 +52,42 @@
     <Compile Include="Forms\CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DosarulMeuMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DosarulMeuMain.Designer.cs">
+      <DependentUpon>DosarulMeuMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ForgotPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ForgotPassWord.Designer.cs">
+      <DependentUpon>ForgotPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmailCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmailCheck.Designer.cs">
+      <DependentUpon>EmailCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDocument.Designer.cs">
+      <DependentUpon>AddDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateDocument.Designer.cs">
+      <DependentUpon>CreateDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPass.Designer.cs">
+      <DependentUpon>ResetPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,11 +96,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddDocument.resx">
+      <DependentUpon>AddDocument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateDocument.resx">
+      <DependentUpon>CreateDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DosarulMeuMain.resx">
+      <DependentUpon>DosarulMeuMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmailCheck.resx">
+      <DependentUpon>EmailCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ForgotPassWord.resx">
+      <DependentUpon>ForgotPassWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPass.resx">
+      <DependentUpon>ResetPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
