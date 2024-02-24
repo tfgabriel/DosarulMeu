@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace DosarulMeu
@@ -108,7 +110,7 @@ namespace DosarulMeu
                 {
                     if(user.Email == res.ToList()[i].Object.Email.ToString())
                     {
-                        if(user.Password == res.ToList()[i].Object.Password.ToString())
+                        if(user.Parola == res.ToList()[i].Object.Parola.ToString())
                         {
                             return true;
                         }
@@ -127,6 +129,24 @@ namespace DosarulMeu
 
                 return false;
             }
+        }
+
+        public string HashPassword(string passsword)
+        {
+            using (var h = SHA256.Create())
+            {
+                byte[] bytes = h.ComputeHash(Encoding.UTF8.GetBytes(passsword));
+
+            var sb = new StringBuilder();
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                sb.Append(bytes[i].ToString("x2"));
+            }
+
+            return sb.ToString();
+
+            }
+            
         }
     }
 }

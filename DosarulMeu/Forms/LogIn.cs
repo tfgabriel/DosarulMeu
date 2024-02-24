@@ -44,7 +44,7 @@ namespace DosarulMeu
                 UserModel user = new UserModel
                 {
                     Email = emailTbx.Text,
-                    Password = passTbx.Text,
+                    Parola = loginchecker.HashPassword(passTbx.Text)
                 };
 
                 loginchecker.checkindatabase(user);
