@@ -151,6 +151,7 @@
             this.Controls.Add(this.numeTb);
             this.Name = "CreateAccount";
             this.Text = "Creează Cont";
+            this.Load += new System.EventHandler(this.CreateAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -90,9 +90,7 @@
     <Compile Include="Forms\CreateDocument.Designer.cs">
       <DependentUpon>CreateDocument.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ResetPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Forms\ResetPass.cs" />
     <Compile Include="Forms\ResetPass.Designer.cs">
       <DependentUpon>ResetPass.cs</DependentUpon>
     </Compile>

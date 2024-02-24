@@ -91,6 +91,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "ResetPass";
             this.Text = "Resetează Parola";
+            this.Load += new System.EventHandler(this.ResetPass_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

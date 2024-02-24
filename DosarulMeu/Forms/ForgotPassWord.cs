@@ -68,5 +68,10 @@ namespace DosarulMeu.Forms
                 sendcodeBtn.Text = "Trimite Cod" + remainingTime.ToString();
             }
         }
+
+        private void ForgotPassWord_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

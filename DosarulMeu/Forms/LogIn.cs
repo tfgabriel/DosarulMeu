@@ -23,12 +23,20 @@ namespace DosarulMeu
         private void createBtn_Click(object sender, EventArgs e)
         {
             CreateAccount createAccount = new CreateAccount();
+            if(createAccount.ShowDialog() == DialogResult.OK)
+            {
+                this.Hide();
+                createAccount.ShowDialog();
+                this.Close();
+            }
             
         }
 
         private void forgotpassLbl_Click(object sender, EventArgs e)
         {
-            ForgotPassWord forgotpass = new ForgotPassWord();
+            UserModel model = new UserModel();
+            model.Email=emailTbx.Text;
+            ResetPass forgotpass = new ResetPass{ user=model};
             if(forgotpass.ShowDialog() == DialogResult.OK )
             {
                 this.Close();
@@ -54,8 +62,8 @@ namespace DosarulMeu
                     DosarulMeuMain main = new DosarulMeuMain();
                     if (main.ShowDialog() == DialogResult.OK)
                     {
+                        main.ShowDialog();              
                         this.Close();
-                        main.ShowDialog();
                     }
                 }
             }

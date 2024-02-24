@@ -96,6 +96,7 @@
             this.Controls.Add(this.emailTbx2);
             this.Name = "ForgotPassWord";
             this.Text = "Mail de resetare";
+            this.Load += new System.EventHandler(this.ForgotPassWord_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

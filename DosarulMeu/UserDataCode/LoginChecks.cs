@@ -97,38 +97,31 @@ namespace DosarulMeu
         
         public bool checkindatabase(UserModel user)
         {
-            if (user == null)
+            FirebaseClient firebaseClient = new FirebaseClient("https://dosarul-meu-f665c-default-rtdb.europe-west1.firebasedatabase.app/"); 
+            var res = firebaseClient.Child("Utilizatori").OnceAsync<UserModel>().Result;
+            for(int i = 0; i < res.Count; i++)
             {
-                MessageBox.Show("Date credentiale invalide.");
-                return false;
-            }
-            else
-            {
-                FirebaseClient firebaseClient = new FirebaseClient("https://dosarul-meu-f665c-default-rtdb.europe-west1.firebasedatabase.app/");
-                var res = firebaseClient.Child("Utilizatori").OnceAsync<UserModel>().Result;
-                for (int i = 0; i < res.Count; i++)
+                if(user.Email == res.ToList()[i].Object.Email)
                 {
-                    if(user.Email == res.ToList()[i].Object.Email.ToString())
+                    if(user.Parola == res.ToList()[i].Object.Parola)
                     {
-                        if(user.Parola == res.ToList()[i].Object.Parola.ToString())
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            MessageBox.Show("Parola incorecta.");
-                            return false;
-                        }
+                        return true;
                     }
                     else
                     {
-                        MessageBox.Show("Email incorect.");
+                        MessageBox.Show("Parola invalida.");
                         return false;
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Email invalid.");
+                    return false;
+                }
 
-                return false;
             }
+
+            return false;
         }
 
         public string HashPassword(string passsword)
