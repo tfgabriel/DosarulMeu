@@ -35,7 +35,7 @@ namespace DosarulMeu
         public void adddoc(DocumentModel newdoc)
         {
             FirebaseClient firebaseClient = new FirebaseClient("https://dosarul-meu-f665c-default-rtdb.europe-west1.firebasedatabase.app/");
-            firebaseClient.Child("Utilizatori").PostAsync(newdoc);
+            firebaseClient.Child("Documente").PostAsync(newdoc);
         }
     }
 }
