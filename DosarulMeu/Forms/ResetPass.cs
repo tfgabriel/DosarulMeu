@@ -14,10 +14,6 @@ using System.Windows.Forms;
 
 namespace DosarulMeu.Forms
 {
-    public class ResetareParola
-    {
-        public string Parola;
-    }
     public partial class ResetPass : Form
     {
         public UserModel user;
@@ -67,5 +63,9 @@ namespace DosarulMeu.Forms
         {
 
         }
+    }
+    public class ResetareParola
+    {
+        public string Parola;
     }
 }

@@ -124,6 +124,32 @@ namespace DosarulMeu
             return false;
         }
 
+        public UserModel getuserindatabase(UserModel user)
+        {
+            UserModel usermodel = new UserModel();
+
+            FirebaseClient firebaseClient = new FirebaseClient("https://dosarul-meu-f665c-default-rtdb.europe-west1.firebasedatabase.app/");
+            var res = firebaseClient.Child("Utilizatori").OnceAsync<UserModel>().Result;
+            for (int i = 0; i < res.Count; i++)
+            {
+                if (user.Email == res.ToList()[i].Object.Email)
+                {
+                    if (user.Parola == res.ToList()[i].Object.Parola)
+                    {
+                        usermodel = new UserModel
+                        {
+                            Nume = res.ToList()[i].Object.Nume,
+                            CNP = res.ToList()[i].Object.CNP,
+                            Email = res.ToList()[i].Object.Email,
+                            Parola = res.ToList()[i].Object.Parola
+                        };
+                    }
+                }
+            }
+
+            return usermodel;
+        }
+
         public string HashPassword(string passsword)
         {
             using (var h = SHA256.Create())

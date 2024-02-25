@@ -56,12 +56,17 @@ namespace DosarulMeu
                     Parola = loginchecker.HashPassword(passTbx.Text)
                 };
 
-                loginchecker.checkindatabase(user);
+                
                 if (loginchecker.checkindatabase(user))
                 {
-                    DosarulMeuMain main = new DosarulMeuMain();
+                    user = loginchecker.getuserindatabase(user);
+                    DosarulMeuMain main = new DosarulMeuMain
+                    {
+                        user = user
+                    };
                     if (main.ShowDialog() == DialogResult.OK)
                     {
+                        this.Hide();
                         main.ShowDialog();              
                         this.Close();
                     }
