@@ -99,7 +99,7 @@ namespace DosarulMeu
         {
             FirebaseClient firebaseClient = new FirebaseClient("https://dosarul-meu-f665c-default-rtdb.europe-west1.firebasedatabase.app/"); 
             var res = firebaseClient.Child("Utilizatori").OnceAsync<UserModel>().Result;
-            for(int i = 0; i < res.Count; i++)
+            for(int i = 0; i < res.Count; ++i)
             {
                 if(user.Email == res.ToList()[i].Object.Email)
                 {
@@ -113,14 +113,10 @@ namespace DosarulMeu
                         return false;
                     }
                 }
-                else
-                {
-                    MessageBox.Show("Email invalid.");
-                    return false;
-                }
+                
 
             }
-
+            MessageBox.Show("Email invalid.");
             return false;
         }
 

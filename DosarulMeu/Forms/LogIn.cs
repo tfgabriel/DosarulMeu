@@ -48,7 +48,7 @@ namespace DosarulMeu
         private void loginBtn_Click(object sender, EventArgs e)
         {
             LoginChecks loginchecker = new LoginChecks();
-            loginchecker.checklogininfo(emailTbx.Text, passTbx.Text);
+            
             if(loginchecker.checklogininfo(emailTbx.Text, passTbx.Text))
             {
                 UserModel user = new UserModel
