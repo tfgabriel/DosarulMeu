@@ -37,13 +37,13 @@ namespace DosarulMeu
                 }
                 else
                 {
-                    MessageBox.Show("Introdu o adresa de mail valida.");
+                    MessageBox.Show("Introdu o adresă de mail validă.");
                     return false;
                 }
             }
             catch 
             {
-                MessageBox.Show("Introdu o adresa de email valida.");
+                MessageBox.Show("Introdu o adresă de email validă.");
                 return false;
             }
 

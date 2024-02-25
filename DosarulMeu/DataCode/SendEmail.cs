@@ -21,7 +21,7 @@ namespace DosarulMeu
             {
                 new MailAddress(email, "Name")
             };
-            EmailStructure("Codul tau", from, to, cc);
+            EmailStructure("Codul tău", from, to, cc);
         }
 
 
@@ -29,8 +29,9 @@ namespace DosarulMeu
 
         public void EmailStructure(string _subject, MailAddress _from, MailAddress _to, List<MailAddress> _cc)
         {
+            //TODO: Defective, implement another way of sending emails [i.e. server-side version of the application], or get a personal SMTP server
             int x = randomcode();
-            string Text = "Codul tau este: " + randomcode().ToString();
+            string Text = "Codul tău este: " + randomcode().ToString();
             SmtpClient mailClient = new SmtpClient("smtp.mail.yahoo.com");
             MailMessage msgMail;
             msgMail = new MailMessage();

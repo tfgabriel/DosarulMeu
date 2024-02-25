@@ -41,6 +41,9 @@ namespace DosarulMeu.Forms
                 label3.Text = "Buletin";
                 label4.Text = "Certificat de nașstere";
             }
+
+            //TODO: Implement the rest of the options
+            //TODO: Add separate buttons for each needed file
         }
 
         private void attachfilesBtn_Click(object sender, EventArgs e)
@@ -61,6 +64,8 @@ namespace DosarulMeu.Forms
 
             DocumentCheck documentCheck = new DocumentCheck();
             documentCheck.adddoc(newdocument);
+
+            MessageBox.Show("Document adăugat cu succes.");
             
         }
         private async void stam(string numf)

@@ -278,5 +278,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DosarulMeu_Icon.ico" />
+    <Content Include="Resources\DosarulMeu_Png0.png" />
+    <Content Include="Resources\DosarulMeu_Png1.png" />
+    <Content Include="Resources\DosarulMeu_Png2.png" />
+    <Content Include="Resources\DosarulMeu_Png30.png" />
+    <Content Include="Resources\DosarulMeu_Png4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,7 +22,7 @@ namespace DosarulMeu.Forms
 
         private void DosarulMeuMain_Load(object sender, EventArgs e)
         {
-            label1.Text = "Buna, " + user.Nume + "!";
+            label1.Text = "Bună, " + user.Nume + "!";
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace DosarulMeu.Forms
         {
             if (string.IsNullOrEmpty(searchTb.Text))
             {
-                MessageBox.Show("Adauga un numar de inregistrare.");
+                MessageBox.Show("Adaugă un număr de înregistrare.");
             }
             else
             {

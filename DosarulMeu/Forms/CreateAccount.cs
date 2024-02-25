@@ -26,7 +26,7 @@ namespace DosarulMeu.Forms
             
             if(string.IsNullOrWhiteSpace(numeTb.Text) || string.IsNullOrWhiteSpace(cnpTb.Text) || string.IsNullOrWhiteSpace(emailTb.Text) || string.IsNullOrWhiteSpace(parolaTb.Text))
             {
-                MessageBox.Show("Completeaza toate spatiile.");
+                MessageBox.Show("Completează toate spațiile.");
                 
             }
             else
