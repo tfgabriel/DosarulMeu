@@ -1,4 +1,4 @@
-﻿namespace DosarulMeu.Forms
+﻿namespace DosarulMeu.Models
 {
     public class DocumentModel
     {

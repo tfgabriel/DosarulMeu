@@ -36,11 +36,12 @@ namespace DosarulMeu
         {
             UserModel model = new UserModel();
             model.Email=emailTbx.Text;
-            ResetPass forgotpass = new ResetPass{ user=model};
+            ForgotPassWord forgotpass = new ForgotPassWord{ user=model };
             if(forgotpass.ShowDialog() == DialogResult.OK )
             {
-                this.Close();
+                this.Hide();
                 forgotpass.ShowDialog();
+                this.Close();
             }
         }
 

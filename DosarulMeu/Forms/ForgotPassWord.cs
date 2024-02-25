@@ -28,9 +28,9 @@ namespace DosarulMeu.Forms
 
         private void sendcodeBtn_Click(object sender, EventArgs e)
         {
-            SendEmail sendEmail = new SendEmail();
-            sendEmail.Email(emailTbx2.Text);
-            code = sendEmail.randomcode();
+            //SendEmail sendEmail = new SendEmail();
+            //sendEmail.Email(emailTbx2.Text);
+            //code = sendEmail.randomcode();
 
             DateTime start = DateTime.UtcNow; 
             endTime = start.AddMinutes(minutes);
@@ -65,7 +65,7 @@ namespace DosarulMeu.Forms
             }
             else
             {
-                sendcodeBtn.Text = "Trimite Cod" + remainingTime.ToString();
+                sendcodeBtn.Text = "Trimite Cod (" + remainingTime.TotalSeconds.ToString() + ")";
             }
         }
 

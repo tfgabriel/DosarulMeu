@@ -52,7 +52,17 @@ namespace DosarulMeu.Forms
 
         private void newdocBtn_Click(object sender, EventArgs e)
         {
-
+            CreateDocument createDocument = new CreateDocument
+            {
+                user = user
+            };
+            if(createDocument.ShowDialog() == DialogResult.OK)
+            {
+                this.Visible = false;
+                createDocument.ShowDialog();
+                this.Close();
+                
+            }
         }
     }
 }

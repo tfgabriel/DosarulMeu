@@ -37,7 +37,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(313, 70);
+            this.textBox1.Location = new System.Drawing.Point(180, 70);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(151, 26);
@@ -45,7 +45,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(313, 143);
+            this.textBox2.Location = new System.Drawing.Point(180, 146);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(151, 26);
@@ -53,7 +53,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(329, 191);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(204, 208);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 35);
             this.button1.TabIndex = 2;
@@ -64,18 +65,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(309, 47);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(175, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 20);
+            this.label1.Size = new System.Drawing.Size(173, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Scrie parola ta nouă:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(309, 120);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(175, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.Size = new System.Drawing.Size(127, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Verifică parola:";
             // 
@@ -83,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 307);
+            this.ClientSize = new System.Drawing.Size(538, 294);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);

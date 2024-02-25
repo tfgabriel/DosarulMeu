@@ -1,6 +1,7 @@
 ﻿using DosarulMeu.Forms;
 using DosarulMeu.Models;
 using Firebase.Database;
+using Firebase.Database.Query;
 using System.Linq;
 
 namespace DosarulMeu
@@ -29,6 +30,12 @@ namespace DosarulMeu
             }
 
             return model;
+        }
+
+        public void adddoc(DocumentModel newdoc)
+        {
+            FirebaseClient firebaseClient = new FirebaseClient("https://dosarul-meu-f665c-default-rtdb.europe-west1.firebasedatabase.app/");
+            firebaseClient.Child("Utilizatori").PostAsync(newdoc);
         }
     }
 }

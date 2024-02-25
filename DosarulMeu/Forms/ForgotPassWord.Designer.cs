@@ -39,23 +39,24 @@
             // 
             // emailTbx2
             // 
-            this.emailTbx2.Location = new System.Drawing.Point(320, 67);
+            this.emailTbx2.Location = new System.Drawing.Point(252, 76);
             this.emailTbx2.Name = "emailTbx2";
             this.emailTbx2.Size = new System.Drawing.Size(184, 26);
             this.emailTbx2.TabIndex = 9;
             // 
             // insertcodeTbx
             // 
-            this.insertcodeTbx.Location = new System.Drawing.Point(320, 111);
+            this.insertcodeTbx.Location = new System.Drawing.Point(252, 121);
             this.insertcodeTbx.Name = "insertcodeTbx";
             this.insertcodeTbx.Size = new System.Drawing.Size(184, 26);
             this.insertcodeTbx.TabIndex = 10;
             // 
             // sendcodeBtn
             // 
-            this.sendcodeBtn.Location = new System.Drawing.Point(232, 162);
+            this.sendcodeBtn.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sendcodeBtn.Location = new System.Drawing.Point(454, 67);
             this.sendcodeBtn.Name = "sendcodeBtn";
-            this.sendcodeBtn.Size = new System.Drawing.Size(126, 29);
+            this.sendcodeBtn.Size = new System.Drawing.Size(352, 40);
             this.sendcodeBtn.TabIndex = 11;
             this.sendcodeBtn.Text = "Trimite Cod";
             this.sendcodeBtn.UseVisualStyleBackColor = true;
@@ -64,17 +65,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(228, 24);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(206, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(387, 20);
+            this.label2.Size = new System.Drawing.Size(445, 25);
             this.label2.TabIndex = 13;
             this.label2.Text = "Îți vom trimite un cod de 6 cifre pe adresa ta de email. ";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(466, 162);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(454, 113);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 29);
+            this.button1.Size = new System.Drawing.Size(172, 39);
             this.button1.TabIndex = 14;
             this.button1.Text = "Verifică codul";
             this.button1.UseVisualStyleBackColor = true;
